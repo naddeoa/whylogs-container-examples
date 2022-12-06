@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "glassdoor-demo"
+version = "0.1.0"
+description = ""
+authors = ["Anthony Naddeo <anthony@whylabs.ai>"]
+readme = "README.md"
+packages = [{include = "glassdoor_demo"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.5.2"
+requests = "^2.28.1"
+certifi = ">=14.05.14"
+six = ">=1.10"
+python-dateutil = ">=2.5.3"
+setuptools = ">=21.0.0"
+urllib3 = ">=1.15.1"
+simplejson = "^3.18.0"
+tqdm = "^4.64.1"
+whylogs-container-client = "^0.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.991"
+pyswagger = "^0.8.39"
+swagger-to = "^5.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
